@@ -1,0 +1,105 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Верстка адаптивних зображень</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!---- або <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8" />
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+	<!-- Відображуємо тіло сторінки -->
+	<div class="wrwpper">
+		<div class="content">
+			<!-- ПЕРШИЙ блок:зображення в тексті   -->
+			<section class="text">
+				<h2 class="text__title title">
+					Це варіант верстки - де зображення змінюється в в залежності
+					від того, на якому пристрої відкривається сайт: на великому чи
+					маленькому екрані.
+				</h2>
+				<div class="text__image">
+					<picture>
+						Це опис з <span>РІЗНИМ зображенням,</span> які показуються в
+						залежності від умови <span>РІЗНИХ пристроїв</span>
+						<source srcset="img/1300x400.png" type="image/jpeg" media="(min-width:1330px)" />
+						<!-- Для екрану, який більше 1300рх   -->
+						<source srcset="img/800x400.png" type="image/jpeg" media="(min-width:992px)" />
+						<!-- Для екрану, який більше 992рх   -->
+						<source srcset="img/400x600.png" type="image/jpeg" media="(max-width:992px)" />
+						<!-- Для екрану, який менше 992рх   -->
+						<img src="img/1300x400.png" alt="" />
+					</picture>
+				</div>
+				<div class="text__value">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+				</div>
+				<div class="text__image">
+					<img src="img/800x400.png" alt="" />
+				</div>
+				<div class="text__value">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+						ex. Nostrum sunt sequi debitis exercitationem. Iure laboriosam
+						quis nam sit quam ratione, omnis culpa, in pariatur suscipit atque
+						nesciunt adipisci.
+					</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+
+</html>
