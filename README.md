@@ -1,2 +1,0 @@
-# libertyschool
-School
